@@ -3,7 +3,19 @@ import pymongo
 from flask_jwt_extended import JWTManager
 from flask_restful import Api, Resource
 from marshmallow import fields
-from app.utils import parse_req
+from webargs.flaskparser import FlaskParser
+
+parser = FlaskParser()
+
+
+def parse_req(argmap):
+    """
+
+    :param argmap:
+    :return:
+    """
+    return parser.parse(argmap)
+
 
 app = Flask(__name__)
 app.config['PROPAGATE_EXCEPTIONS'] = True
@@ -24,25 +36,27 @@ mycol = mytable['test']
 class Get_Data_MG(Resource):
 
     def get(self):
-        find_data = list(mycol.find({}, {'_id': 0 }))
+        find_data = list(mycol.find({}, {'_id': 0 , 'id': 1,  'answer': 1}))
         return jsonify(find_data)
 
     def post(self):
         param = {
-            'my_answer': fields.String()
+            'as': fields.Number(),
+            'id_as': fields.Number()
         }
         try:
             json_data = parse_req(param)
-            my_answer = json_data.get('my_answer', None)
-        except:
-            return jsonify("Getting error wrong !")
-        try:
-            list_answer = list(mycol.find_many({}, {'id': 1, 'answer': 1}))
-            print(list_answer)
+            my_answer = json_data.get('as', None)
+            id_as = json_data.get('id_as', None)
         except Exception as e:
             return {e}
-
-
+        try:
+            find_data = list(mycol.find({}, {'_id': 0, 'id': 1, 'answer': 1}))
+            if find_data['id'] == id_as and find_data['answer'] == my_answer:
+                return jsonify("Right")
+            return jsonify("Wrong")
+        except Exception as e:
+            return {e}
 
 api.add_resource(Get_Data_MG, '/get_data')
 
