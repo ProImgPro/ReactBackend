@@ -1,0 +1,670 @@
+[2020-Feb-03 20:02] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\util\_collections.py", line 999, in __call__
+    return self.registry[key]
+KeyError: 18048
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 334, in dbapi
+    from pysqlite2 import dbapi2 as sqlite
+ModuleNotFoundError: No module named 'pysqlite2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\app\api\get_data.py", line 9, in get_data
+    data = qa.get_data()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\app\model\__init__.py", line 29, in get_data
+    results = db.session.query(qa).first()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\util\_collections.py", line 1001, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2950, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 143, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 877, in engine
+    return self.get_engine()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 896, in get_engine
+    return connector.get_engine()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 559, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\engine\__init__.py", line 425, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\engine\strategies.py", line 81, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 339, in dbapi
+    raise e
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 337, in dbapi
+    from sqlite3 import dbapi2 as sqlite  # try 2.5+ stdlib name.
+  File "E:\Anaconda3\envs\py36\lib\sqlite3\__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "E:\Anaconda3\envs\py36\lib\sqlite3\dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ImportError: DLL load failed: The specified module could not be found.
+
+[2020-Feb-03 20:14] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\util\_collections.py", line 999, in __call__
+    return self.registry[key]
+KeyError: 15956
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 334, in dbapi
+    from pysqlite2 import dbapi2 as sqlite
+ModuleNotFoundError: No module named 'pysqlite2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\app\api\get_data.py", line 9, in get_data
+    data = qa.get_data()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\app\model\__init__.py", line 29, in get_data
+    results = db.session.query(qa).first()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\orm\scoping.py", line 153, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\util\_collections.py", line 1001, in __call__
+    return self.registry.setdefault(key, self.createfunc())
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\orm\session.py", line 2950, in __call__
+    return self.class_(**local_kw)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 143, in __init__
+    bind = options.pop('bind', None) or db.engine
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 877, in engine
+    return self.get_engine()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 896, in get_engine
+    return connector.get_engine()
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 559, in get_engine
+    self._engine = rv = sqlalchemy.create_engine(info, **options)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\engine\__init__.py", line 425, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\engine\strategies.py", line 81, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 339, in dbapi
+    raise e
+  File "C:\Users\BootAI\PycharmProjects\ReactjsBackEndProject\venv\lib\site-packages\sqlalchemy\dialects\sqlite\pysqlite.py", line 337, in dbapi
+    from sqlite3 import dbapi2 as sqlite  # try 2.5+ stdlib name.
+  File "E:\Anaconda3\envs\py36\lib\sqlite3\__init__.py", line 23, in <module>
+    from sqlite3.dbapi2 import *
+  File "E:\Anaconda3\envs\py36\lib\sqlite3\dbapi2.py", line 27, in <module>
+    from _sqlite3 import *
+ImportError: DLL load failed: The specified module could not be found.
+
+[2020-Feb-03 22:59] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 11, in get_data
+    conn = sqlite3.connect('test.db')
+NameError: name 'sqlite3' is not defined
+
+[2020-Feb-03 23:00] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 12, in get_data
+    c.execute('SELECT * FROM qa')
+NameError: name 'c' is not defined
+
+[2020-Feb-03 23:00] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 12, in get_data
+    conn.execute('SELECT * FROM qa')
+sqlite3.OperationalError: no such table: qa
+
+[2020-Feb-03 23:02] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 11, in get_data
+    conn = sqlite3.connect('////test.db')
+sqlite3.OperationalError: unable to open database file
+
+[2020-Feb-03 23:03] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 11, in get_data
+    conn = sqlite3.connect('////test.db')
+sqlite3.OperationalError: unable to open database file
+
+[2020-Feb-03 23:14] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 11, in get_data
+    conn = sqlite3.connect('///test.db')
+sqlite3.OperationalError: unable to open database file
+
+[2020-Feb-03 23:14] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 11, in get_data
+    conn = sqlite3.connect('//test.db')
+sqlite3.OperationalError: unable to open database file
+
+[2020-Feb-03 23:15] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 12, in get_data
+    conn.execute('SELECT * FROM qa;')
+sqlite3.OperationalError: no such table: qa
+
+[2020-Feb-03 23:16] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 13, in get_data
+    data = conn.fetchall()
+AttributeError: 'sqlite3.Connection' object has no attribute 'fetchall'
+
+[2020-Feb-04 15:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:20] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:43] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:48] 127.0.0.1 GET http /favicon.ico? 404 NOT FOUND
+[2020-Feb-05 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:56] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:56] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:57] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 15:57] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:36] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:36] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:37] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:37] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:37] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:37] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:38] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 16:38] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:20] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:20] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:21] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:32] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:32] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:33] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 17:33] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 19:48] 127.0.0.1 GET http /api/get_data? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 18, in get_data
+    'id': item['id'],
+TypeError: tuple indices must be integers or slices, not str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\get_data.py", line 27, in get_data
+    return send_error(message='DB error')
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\utils.py", line 36, in send_error
+    "version": get_version(version)
+NameError: name 'get_version' is not defined
+
+[2020-Feb-05 19:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 19:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 19:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 19:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 19:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:44] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:44] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:49] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:49] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 20:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:56] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-05 23:56] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 00:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 00:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 09:01] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 09:49] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 09:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:11] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:11] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:13] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:13] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:13] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:13] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:16] 127.0.0.1 GET http /favicon.ico? 404 NOT FOUND
+[2020-Feb-06 14:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:49] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 14:49] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:36] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:42] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:43] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:43] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:55] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 15:55] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:17] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:17] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:18] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:18] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:26] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:26] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:28] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:28] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 16:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:07] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:07] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:07] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:07] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:13] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-06 22:40] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:17] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:28] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:33] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:34] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:35] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:36] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:52] 127.0.0.1 GET http /ap1i/get_data? 404 NOT FOUND
+[2020-Feb-07 09:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 09:59] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:01] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:04] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 10:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 14:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 14:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 14:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 15:01] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 15:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 15:57] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:25] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:26] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:40] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:41] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:43] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:44] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:44] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 16:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 17:27] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 17:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 17:29] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-07 17:30] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:55] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 12:55] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:01] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:05] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:07] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:11] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:14] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:14] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:15] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:15] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:17] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:17] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:18] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:20] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:21] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:21] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:21] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:23] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:24] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:25] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 13:26] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:56] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:58] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:59] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 14:59] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:00] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:01] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:03] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:04] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:32] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:37] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:43] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:45] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:46] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:47] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:48] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:50] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:51] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:52] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:53] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:54] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 15:59] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:06] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:08] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:09] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:09] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:10] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 16:12] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-08 20:16] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-09 21:18] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-09 21:18] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-09 21:19] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-09 21:20] 127.0.0.1 GET http /api/get_data? 200 OK
+[2020-Feb-09 21:56] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 21:56] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 21:57] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 21:57] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 21:58] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 21:59] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:00] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:00] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:04] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:04] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:04] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:05] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:05] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:07] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:07] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:07] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:07] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:07] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:11] 127.0.0.1 POST http /api/get_data? 405 METHOD NOT ALLOWED
+[2020-Feb-09 22:12] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:12] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:12] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:12] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:13] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:13] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: check_answer() missing 1 required positional argument: 'data'
+
+[2020-Feb-09 22:30] 127.0.0.1 POST http /api/questions? 5xx INTERNAL SERVER ERROR
+Traceback (most recent call last):
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\questions_data.py", line 60, in check_answer
+    a = [True for i, dic in enumerate(data) if (dic['id'] == item['id'] and dic['value'] == item['id'] )]
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\questions_data.py", line 60, in <listcomp>
+    a = [True for i, dic in enumerate(data) if (dic['id'] == item['id'] and dic['value'] == item['id'] )]
+TypeError: tuple indices must be integers or slices, not str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\BootAI\AppData\Local\Programs\Python\Python37-32\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\api\questions_data.py", line 66, in check_answer
+    return send_error(message='DB error')
+  File "C:\Users\BootAI\PycharmProjects\ReactBackend\app\utils.py", line 38, in send_error
+    "version": get_version(version)
+NameError: name 'get_version' is not defined
+
+[2020-Feb-09 22:31] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:38] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:41] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:46] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:47] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:51] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:52] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:52] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 22:52] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:52] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:53] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:55] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 22:56] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 22:58] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-09 23:00] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 23:00] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 23:00] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-09 23:02] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 23:03] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 23:04] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-09 23:04] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 08:43] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 08:43] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 08:43] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 08:43] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 08:44] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 08:44] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 08:44] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 09:05] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 09:06] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 09:06] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 09:06] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 09:07] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 09:07] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 09:07] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 09:07] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-10 09:08] 127.0.0.1 GET http /api/questions? 200 OK
+[2020-Feb-10 09:08] 127.0.0.1 OPTIONS http /api/questions? 200 OK
+[2020-Feb-10 09:08] 127.0.0.1 POST http /api/questions? 200 OK
+[2020-Feb-11 10:29] 192.168.1.21 GET http /api/questions? 200 OK

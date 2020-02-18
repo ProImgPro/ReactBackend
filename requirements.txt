@@ -1,0 +1,8 @@
+Flask==0.12.2
+Flask-Cors==3.0.3
+marshmallow==2.15.4
+Flask-SQLAlchemy==2.3.2
+SQLAlchemy==1.2.12
+webargs==1.8.1
+pysqlite3==0.4.2
+marshmallow==2.15.4
