@@ -5,6 +5,8 @@ from flask_restful import Api, Resource
 from marshmallow import fields
 from webargs.flaskparser import FlaskParser
 from bson import ObjectId
+from check_answer import Check_Answer
+
 parser = FlaskParser()
 
 
@@ -20,7 +22,7 @@ def parse_req(argmap):
 app = Flask(__name__)
 app.config['PROPAGATE_EXCEPTIONS'] = True
 app.config["MONGO_URI"] = "mongodb://bootai:1234567aA%40@27.72.147.222:27017/erp?authSource=admin"
-
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 jwt = JWTManager(app)
 
 app.secret_key = 'Yep'
@@ -141,6 +143,7 @@ class Get_Data_MG(Resource):
 
 
 api.add_resource(Get_Data_MG, '/get_data')
+api.add_resource(Check_Answer, '/check_answer')
 
 if __name__ == '__main__':
     app.run(port=23410, debug=True)

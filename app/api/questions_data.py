@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint
 from app.utils import send_result, send_error, send_file, parse_req, fields
 # from app.model import qa
 import sqlite3
